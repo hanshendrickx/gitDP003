@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # new include means there is another url in pages
     path('', include('pages.urls')),
+    path('', include('posts.urls')),  # new
 ]

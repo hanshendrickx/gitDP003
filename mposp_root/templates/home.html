@@ -2,4 +2,14 @@
 <!-- templates/home.html -->
 {% extends 'base.html' %} {% block content %}
 <h1>Homepage</h1>
+
+<h1>Message board homepage</h1>
+<h1>The list does not show up</h1>
+<ul>
+  {% for post in object_list %}
+  <li>{{ post.text }}</li>
+  {% endfor %} {% for post in all_posts_list %}
+  <li>{{ post.text }}</li>
+  {% endfor %}
+</ul>
 {% endblock content %}
